@@ -1,0 +1,20 @@
+<h2>Let's get started, {{name}}!</h2>
+
+<form action="/internal/create">
+	<label for="cname">Name of your company: </label>
+	<input type="text" name="cname" placeholder="{{name}} Tech" required /><br />
+	<label for="flagship">Name of your flagship (main) product: </label>
+	<input type="text" name="flagship" placeholder="App/Game {{id}}" required /><br />
+	<label for="type">Type of product:</label>
+  <select name="type" id="type">
+    <option value="stream">Streaming Service</option>
+    <option value="game">2D Game</option>
+		<option value="portfolio">Personal Site/Portfolio</option>
+  </select><br />
+	<label for="lang">Language would you like to use:</label>
+  <select name="lang" id="lang">
+    <option value="node">Node.js</option>
+    <option value="python">Python</option>
+  </select><br />
+	<input type="submit" />
+</form>
